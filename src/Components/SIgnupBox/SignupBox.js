@@ -25,7 +25,7 @@ function SignupBox() {
       return;
     }
 
-    axios.post("https://jwt-be-1emp.onrender.com/users/signup", signupData)
+    axios.post("be-entri.onrender.com/users/signup", signupData)
       .then((res) => {
         console.log('Signup successful:', res.data);
         navigate("/login")
