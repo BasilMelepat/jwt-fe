@@ -12,7 +12,7 @@ function LoginBox() {
  
   
     const handleLogin = (event) => {
-      axios.post("https://jwt-be-1emp.onrender.com/users/login",loginData).then(res => {
+      axios.post("be-entri.onrender.com/users/login",loginData).then(res => {
         localStorage.setItem("token",res.data.token)
         console.log(res.data)
         navigate('/')
