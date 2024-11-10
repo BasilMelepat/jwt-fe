@@ -7,7 +7,7 @@ function Home() {
  const navigate = useNavigate()
   useEffect(()=>{
     const token = localStorage.getItem('token')
-    axios("https://jwt-be-1emp.onrender.com/users/getdata",{headers:{'Authorization':`bearer ${token}`}}).then(result=>{
+    axios("be-entri.onrender.com/users/getdata",{headers:{'Authorization':`bearer ${token}`}}).then(result=>{
       console.log(result.data);
       setImages(result.data)
     }).catch(err=>{
